@@ -1,0 +1,131 @@
+/**reset all the margin and padding to 0**/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, Sans-serif;
+    font-size: 17px;
+    font-color: #926239;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image:url(../img/showcase3.jpeg);
+    /**in order the all picture we have the ...**/
+    background-size: cover;
+    /** posithion the image to the center ...**/
+    background-position: center;
+    /** we will use flexbox to align the text we have ..**/
+    display:flex; /** Inline both h1 tag and the paragraph and the a tag**/
+    /** change the direction of the text from inline to column (vertically instead of horizontally)... **/
+    flex-direction: column;
+    /** align the content both verical (justify) and horizontal (align) ...**/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /** we will add some padding 0 top and bottom and 20 for left and right because when the screen gets to small
+    the text loses some visibillity**/
+    padding: 0 20px;
+    /** we google css-units and we see all the different options we have
+    about the size of an image. there a vh choice Relative to 1% of the
+    height of the viewport**/
+    height:100vh;
+
+}
+
+#showcase h1 {
+    /** change the font size of h1 tag **/
+    font-size: 50px;
+    line-height: 1.2;
+
+}
+
+#showcase p {
+    font-size: 20px;
+
+}
+
+#showcase .button {
+    font-size: 18px;
+    /** take off the underlinning..**/
+    text-decoration: none;
+    color: #926239;
+    /** add a border arround it **/
+    border: #926239 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /** push down the button **/
+    margin-top: 20px;
+
+}
+
+#showcase .button:hover{ /**on his hover state i want an effect**/
+    background: #926239; /** browny background color**/
+    color: #fff;         /** with white colored text**/
+}
+
+#section-a {
+    padding: 10px;
+    background: #926239;
+    color: #fff;
+    text-align: center;
+}
+
+#input .row{
+  padding: 10px !important;
+  background: #926239 !important;
+  /*color: #fff;*/
+
+}
+
+
+/*#section-a .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #926239;
+    border: #926239 1px solid;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#section-a .button:hover{
+    background: #000;
+    color: #fff;
+}*/
+
+[v-cloak] {
+  display:none;
+}
+
+
+#section-b {
+    padding: 20px;
+    background: #e4e4e4;
+    text-align: center;
+}
+/*#section-c {
+    display: flex;
+
+}*/
+#section-c {
+    padding: 20px 20px;
+}
+
+#box1 {
+    background: #926239;
+    color: #fff;
+}
+#box2 {
+    background: #e4e4e4;
+}
+#box3 {
+    background: #926239;
+    color: #fff;
+}
+
+footer{
+  padding:30px;
+}
